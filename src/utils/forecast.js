@@ -19,7 +19,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('Unable to find location', undefined);
         } else {
             callback(undefined, ' It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.visibility + '% visibility,' 
-            + ' Weather Description : '+ body.current.weather_descriptions  + '  , and the Wind_Speed is ' + body.current.wind_speed ); }
+            + ' Weather Description : '+ body.current.weather_descriptions[0]  + '  , and the Wind_Speed is ' + body.current.wind_speed + ' The Humidity is '+ body.current.humidity+ ' %.'); }
     })
 }
 
