@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/img/weather.jpeg">  {{!-- {{ /* to make an icon in home page small foto an a tab */ }} --}}
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+{{!-- {{ To access the app.js from hbs file u should use 
+ 2 curl vraces and inside the argument name {{}} }} --}}
+     
+    <div class="main-content" >
+      {{>header}}
+      <p> Use this Site to get ur Weather! </p>
+
+     <form action="">
+         <input placeholder="location">  {{!-- placeholder make backgrond like a written --}}
+
+         <button> Search </button>
+     </form>
+
+     <p id="message-1"></p>  {{!-- we make identifier because querySelector will take the first p --}}
+     <p id="message-2"></p>
+
+    </div> 
+       {{>footer}}
+       <script src = "/js/app.js" > </script>
+</body>
+</html>

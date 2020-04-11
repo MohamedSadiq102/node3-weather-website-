@@ -1,0 +1,65 @@
+body {
+    color: green;
+    font-family: Arial;
+    max-width: 650px; /* this saaid the width of our Page */
+    margin: 0 auto; /* 0 for the Top and Bottom , auto -> left and right between the box above up and itself */
+    padding: 0 16px; /* o for top & bottom , 16px between our body content and side of the Browser */
+
+    display: flex; /* important thing for css flex box */
+    flex-direction:column ;/* the default value is row which means everything is from left to right and with coloum everything are from top to bottum */
+
+    min-height: 100vh; /* is the default for ViewPort "Broswer's height", footer will come at the end of the Page  */
+
+}
+
+.main-content {
+    flex-grow: 1; /* this allows a given element to grow to take up as much space as it needs,  1 tell flex-box that content should take up all leftover space */
+
+}
+
+footer{
+    background : gray;
+    padding: 16px 0 ; /* 16 for a top  give a distance between the Edge of the text and the start Page , 0 for a bootum*/
+    margin-top: 16px;
+    border-top: 1px solid hotpink; /* one 1px, type of border solid , colour */
+}
+
+header{
+margin-top: 16px;
+margin-bottom: 16px;
+
+}
+
+h1{
+    font-size: 64px;
+    
+    margin-bottom: 16px;
+}
+
+header a /* this means i'm target header and lloking for any link*/{
+    color: gray;
+    margin-right:16px ;
+    text-decoration: underline /* the line under the link if u like to removre use none */;
+}
+
+/* we have made a portrait in order to make only this foto and u should change it in another
+page "about " with class ="portrait"  */
+.portrait {
+    width:  250px;
+}
+
+input{
+    border : 8 px solid #cccccc ; /* width of the border , type , colour light grey  */
+    padding: 8px; /* the space between the text and border  */
+}
+
+
+button{
+   cursor: pointer; /* allows us to customize the appearance of cursor when we're hovering over it small hand on the button*/
+    border: 2px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+
+}
+
