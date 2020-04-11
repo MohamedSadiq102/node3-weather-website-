@@ -6,7 +6,7 @@ const geocode = require('./utils/geocode')
 
 // store and generate our express application
 const app = express();
-
+const port = process.env.PORT || 3000;
 // to serve up our app and connect with the html file , for express config
 const publicDiretoryPath = path.join(__dirname, '../public')
 
@@ -133,7 +133,7 @@ app.get('*' /* the * for everything else */ , (req, res) => {
 })
 
 // start up the server with the port num. -> 3000
-app.listen(3000, /**the callback fuc */ () =>{
+app.listen(port, /**the callback fuc */ () =>{
 // the User wouldn't see this message 
     console.log('Server is up on Port 3000.')
 })

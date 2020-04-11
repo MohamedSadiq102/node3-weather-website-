@@ -28,7 +28,7 @@ weatherForm.addEventListener('submit',(e /* e for event */) =>{
     messageOne.textContent = ' Loading...';
     messageTwo.textContent = ''
 
-    fetch('http://localhost:3000/weather?address='+ location).then((response) => {
+    fetch('/weather?address='+ location).then((response) => {
     // it takes only 1 argument and we can use this argument to extract the data from it
     // the callback func will run when the jason data has arrived and been passed
     response.json().then ((data) => {
