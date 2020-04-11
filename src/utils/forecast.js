@@ -18,8 +18,8 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined);
         } else {
-            callback(undefined, ' It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.visibility + '% visibility.');
-        }
+            callback(undefined, ' It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.visibility + '% visibility,' 
+            + ' Weather Description : '+ body.current.weather_descriptions  + '  , and the Wind_Speed is ' + body.current.wind_speed ); }
     })
 }
 
